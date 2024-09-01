@@ -40,6 +40,8 @@ ul.list {
 }
 ul.list li {
   padding: 0.5em 0;
+  border-top: 2px dashed currentColor;
+  border-bottom: 2px dashed currentColor;
 }
 ul.list li span {
   float: right;
