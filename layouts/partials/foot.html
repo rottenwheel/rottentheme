@@ -1,0 +1,14 @@
+<footer>
+	<a href="{{- .Site.Params.repo -}}">Source Code</a>
+
+	<ul>
+		{{- range .Site.Params.footer.items -}}
+		<li>
+			{{- if .icon -}}
+			<img src="/icons/{{- .icon -}}" alt="{{- .name -}}" />&nbsp;
+			{{- end -}}
+			<a href="{{- .link -}}">{{- .name -}}</a>
+		</li>
+		{{- end -}}
+	</ul>
+</footer>
