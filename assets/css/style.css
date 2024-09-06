@@ -6,7 +6,7 @@ body {
   background: black;
   color: white;
 }
-.container {
+.container, footer {
   margin: auto;
   padding: 0.5em 1em;
   min-width: 300px;
@@ -99,4 +99,27 @@ figcaption h4 {
 }
 .content a {
   text-decoration: underline;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  display: inline;
+  font-size: 1em;
+  line-height: 1.7em;
+}
+footer ul li img {
+  display: inline;
+  height: 1rem;
+  vertical-align: middle;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+footer ul li::after {
+  content: " | ";
+}
+footer ul :last-child::after {
+  content: "";
 }
