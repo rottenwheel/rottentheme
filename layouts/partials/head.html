@@ -12,7 +12,7 @@
   {{ if .Params.image }}
     {{ $image = .Params.image }}
   {{ else }}
-    {{ $image = resources.Get "images/rw_profile.jpg" }}
+    {{ $image = "/images/rw_profile.jpg" }}
   {{ end }}
 
   <meta property="og:title" content="{{ .Title }}">
